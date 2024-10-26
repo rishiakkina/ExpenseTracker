@@ -15,7 +15,7 @@ function AddExpense(){
             amount : +amount
         }
     
-        if(text !== '' || amount !== 0){
+        if(text !== '' && amount !== 0){
             Add(newTransaction);
         }else{
             alert("can't add empty transaction")

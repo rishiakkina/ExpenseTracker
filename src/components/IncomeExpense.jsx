@@ -11,11 +11,11 @@ function IncomeExpense(){
         <div className="spend">
             <div className="income">
                 <div className="income-spend">Income : </div>
-                <div style={{color: "#2ecc71"}}>+₹{plus}</div>
+                <div style={{color: "#2ecc71"}}>+₹{(Math.abs(plus)).toFixed(1)}</div>
             </div>
             <div className="expense">
                 <div className="expense-spend">Expense :</div>
-                <div style={{color : "#c0392b"}}>-₹{Math.abs(minus)}</div>
+                <div style={{color : "#c0392b"}}>-₹{(Math.abs(minus)).toFixed(1)}</div>
             </div>
         </div>
     </>

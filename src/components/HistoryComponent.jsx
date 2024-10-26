@@ -14,7 +14,7 @@ function HistoryComponent({ text , amount , id }){
         <div className={amount > 0 ? 'HistoryItemplus':'HistoryItemminus'}>
             <span className="delete"><button className="delete-btn" onClick={() => deleteId(id)}>X</button></span>
             <div className="item">{text}</div>
-            <div className="itemcost" >{sign}₹{Math.abs(amount)}</div>
+            <div className="itemcost" >{sign}₹{(Math.abs(amount)).toFixed(1)}</div>
         </div>
     </>
 }

@@ -14,7 +14,7 @@ function ExpenseTitle(){
                 Your Balance
             </div>
             <div className="amount">
-            {sign}₹{Math.abs(total)}
+            {sign}₹{(Math.abs(total)).toFixed(0)}
             </div>
         </>
 }

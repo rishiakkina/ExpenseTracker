@@ -23,7 +23,7 @@ function AddExpense(){
         <input type="text" name="text" className="inputitem"  onChange={ e => setText(e.target.value)} placeholder="Ex Groceries" autoComplete='off'/>
         <div className="addspend">Cost</div>
         <input type="text" className="inputcost"onChange={e => setAmount(e.target.value)} placeholder="Ex ₹100 ( Add -ve for expense )"/>
-        <button onClick={submit}>Add</button>
+        <button onClick={submit} className='btn'>Add</button>
     </>
 }
 

@@ -9,7 +9,7 @@ function Income(){
         <div className="historyTitle">History</div>
         <div className="history">
             <ul>
-                {transactions.map(transaction => <HistoryComponent key={transaction.id} text = {transaction.text} amount = {transaction.amount}/>)}
+                {transactions.map(transaction => <HistoryComponent key={transaction.id} id = {transaction.id} text = {transaction.text} amount = {transaction.amount}/>)}
             </ul>
         </div>
     </>
